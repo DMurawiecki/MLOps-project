@@ -12,6 +12,6 @@ The competition asks competitors to assign labels to the following seven types o
 
 The data is presented in JSON format, which includes a document identifier, the full text of the essay, a list of tokens, information about whitespace, and token annotations.Token labels are presented in BIO (Beginning, Inner, Outer) format.
 
-The project used classic libraries: hugging face, transformers, json, pathlib, pandas and numpy. A blend of 3 pretrained DeBERTa models was used as a model. Word level tokenization is used, and the received tokens and token_map are loaded into the training dataset. We employ parallel processing to tokenize our dataset, ensuring speedy execution. We slightly fine-tune the model’s on full train data and present the final predictions on the test in .csv form.
+The project used classic libraries: hugging face, transformers, json, pathlib, pandas and numpy. A blending of 3 pretrained DeBERTa models was used as a model. Word level tokenization is used, and the received tokens and token_map are loaded into the training dataset. We employ parallel processing to tokenize our dataset, ensuring speedy execution. We slightly fine-tune the model’s on full train data and present the final predictions on the test in .csv form.
 
 In the final application, it would be possible to implement the output of a text document in which all PII would be highlighted in color.
