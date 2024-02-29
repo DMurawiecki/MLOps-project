@@ -10,7 +10,7 @@ The competition asks competitors to assign labels to the following seven types o
 * URL_PERSONAL - A URL that might be used to identify a student.
 * STREET_ADDRESS - A full or partial street address that is associated with the student, such as their home address.
 
-The data is presented in JSON format, which includes a document identifier, the full text of the essay, a list of tokens, information about whitespace, and token annotations.Token labels are presented in BIO (Beginning, Inner, Outer) format.
+Data is presented in JSON format, which includes a document identifier, the full text of the essay, a list of tokens, information about whitespace, and token annotations.Token labels are presented in BIO (Beginning, Inner, Outer) format.
 
 The project used classic libraries: hugging face, transformers, json, pathlib, pandas and numpy. A blending of 3 pretrained DeBERTa models was used as a model. Word level tokenization is used, and the received tokens and token_map are loaded into the training dataset. We employ parallel processing to tokenize our dataset, ensuring speedy execution. We slightly fine-tune the model’s on full train data and present the final predictions on the test in .csv form.
 
