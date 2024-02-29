@@ -15,7 +15,7 @@ The data is presented in JSON format, which includes a document identifier, the 
 The project used classic libraries: hugging face, transformers, json, pathlib, pandas and numpy. A blending of 3 pretrained DeBERTa models was used as a model. Word level tokenization is used, and the received tokens and token_map are loaded into the training dataset. We employ parallel processing to tokenize our dataset, ensuring speedy execution. We slightly fine-tune the model’s on full train data and present the final predictions on the test in .csv form.
 
 As a plan for a model's deploy, we have several points: 
-* creating an API for accepting test data and loading it into the model
+* creating an API for accepting test data, loading it into the model and tracking results of experiments
 * creating and installing libraries in docker container for model’s deploy
 * launching a container using our Image on the server, giving it access to our API
 * scaling the system onto several servers that can withstand the load
