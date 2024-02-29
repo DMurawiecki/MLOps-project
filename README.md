@@ -16,8 +16,8 @@ The project used classic libraries: hugging face, transformers, json, pathlib, p
 
 As a plan for a model's deploy, we have several points: 
 * creating an API for accepting test data, loading it into the model and tracking results of experiments
-* creating and installing libraries in Docker Image for model’s deploy
-* launching a container using our Image on the server, giving it access to our API
+* creating Docker Image for model’s deploy
+* launching and installing libraries in Docker container using our Image on the server, giving it access to our API
 * scaling the system onto several servers that can withstand the load
 
 In the model's inference, it would be possible to implement the output of a text document in which all PII would be highlighted in color.
